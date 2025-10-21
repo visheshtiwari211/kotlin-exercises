@@ -5,7 +5,13 @@ import kotlin.test.assertEquals
 
 // factorial(5) = 5! = 5 * 4 * 3 * 2 * 1 = 120
 // https://en.wikipedia.org/wiki/Factorial
-fun factorial(n: Int): Long = TODO()
+fun factorial(n: Int): Long {
+    var result = 1L
+    for (i in 2..n) {
+        result *= i
+    }
+    return result
+}
 
 class FactorialTest {
 
